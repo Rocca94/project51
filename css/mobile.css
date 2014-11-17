@@ -1,7 +1,5 @@
 .container{
 	width:100%;
-	margin:auto;
-	text-align:center;
 	background-color:white;
 	overflow:auto;
 	
@@ -24,11 +22,9 @@ body {
 }
 
 logo img{
-	width:400px;
-	height:300px;
+	width:200px;
+	height:150px;
 	margin:auto;
-
-	
 }
 
 .main{
@@ -44,7 +40,7 @@ logo img{
 	list-style:none;
 }
 .list{
-	width:20%;
+	width:100%;
 	margin-top:-1px;
 	display:block;
 	text-align:center;
@@ -117,13 +113,9 @@ logo img{
 	height:50px;
 	border-radius:5px  5px 5px 0px;
     text-align:center;
-	
-	
-
-
 }
 .query ul {
-    width:80%;
+    width:100%;
     margin:auto;
 	padding-top:10px;
 	display:block;
@@ -142,61 +134,36 @@ logo img{
 #amount{
 	color:#ffae19;
 }
-@media screen and (min-width: 700px) {
+
 .query ul li{
    padding-top:0.5%;
    display:inline-block;
-   float:right;
+   float:left;
    width:30%;
    padding-left:2%;
    }
-}
-@media screen and (max-width: 699px) {
-body{
-	font-size:10pt;
-}
- .container{
-	width:99%;
-	margin:auto;
-	text-align:center;
-	background-color:white;
-	box-shadow: -5px 20px  10px 5px   #336699;
-	border-radius:5px;
-	
-}
- .query ul li{
-   padding-top:0.5%;
-   display:inline-block;
-   padding-right:5%;
-   float:right;
-   }
-}
+
 .result{
-	display:inline-block;
-    width:80%;
+	padding-top:2%;
+	display:block;
+    width:100%;
 }
 .result ul {
+	width:100%;
 	padding:0;	
     margin: 0;
 	list-style:none;
 }
 .result ul li {
-	padding:0;	
+	padding-top:0.5%;	
     margin: 0;
 	list-style:none;
 }
-.row{
-	display:block;
-	width:100%;
-	height:20px;
-	padding:1px;
-	font-size:12pt;
-
-}
 .hours{
-	width:20%;
+	width:33%;
 	color:black;
 	font-size:12pt;
+	display:block;
 	float:left;
 	/*Gradient*/
 	background: #ffd27f;
@@ -212,7 +179,7 @@ body{
 
 }
 .room{
-	width:80%;
+	width:40%;
 	color:black;
     display:inline-block;
 	/*Gradient*/
