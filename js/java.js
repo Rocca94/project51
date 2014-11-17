@@ -31,7 +31,8 @@ $(document).ready(function () {
     });
   
 });*/
-  $(function() {
+ $(document).ready(function() {
+  //Slider
     $( "ui-slider-range ui-widget-header ui-corner-all" ).css('background', 'rgb(0,255,0)');
     $( "#slider-range" ).slider({
       range: true,
@@ -39,12 +40,15 @@ $(document).ready(function () {
       max: 19,
       values: [ 9, 19 ],
       slide: function( event, ui ) {
-        $( "#amount" ).html( "h" + ui.values[ 0 ] + " - h" + ui.values[ 1 ] );
+        $( "#amount" ).html(  ui.values[ 0 ] + " h - " + ui.values[ 1 ]+" h" );
       }
     });
-    $( "#amount" ).html( "h" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - h" + $( "#slider-range" ).slider( "values", 1 ) );
+    $( "#amount" ).html($( "#slider-range" ).slider( "values", 0 )+" h" +
+      " - " + $( "#slider-range" ).slider( "values", 1 )+" h" );
+  //--------	  
+	  
   });
+
 function lol(){
    /* var col = vettore[Math.floor((Math.random() * vettore.length))];
 	var zoz = vett[Math.floor((Math.random() * vett.length))];
