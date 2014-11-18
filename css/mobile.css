@@ -3,7 +3,6 @@
 	background-color:white;
 	height:100%;
 	text-align:center;
-	overflow:auto;
 	padding:5px;
 	
 }
@@ -134,7 +133,7 @@ logo img{
    }
 
 .result{
-	padding-top:5%;
+	padding-top:5px;
 	display:block;
     width:100%;
 }
@@ -169,7 +168,7 @@ logo img{
 
 }
 .room{
-	width:40%;
+	width:77%;
 	color:black;
     display:inline-block;
 	/*Gradient*/
