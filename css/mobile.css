@@ -105,10 +105,12 @@ logo img{
     text-align:center;
 }
 .query ul {
+	margin:0;
+	padding:0;
     width:100%;
-    margin:auto;
 	padding-top:10px;
 	display:block;
+	float:left;
 	  
 }
 #slider-range .ui-slider-range { 
@@ -190,7 +192,7 @@ logo img{
 }
 .style-select select{
 	border-radius:10px;
-	width:75px;
+	width:65px;
 	/*Gradient*/
 	font-weight:strong;
 	color:black;
