@@ -129,7 +129,7 @@ logo img{
    padding-top:0.5%;
    display:inline-block;
    float:left;
-   width:30%;
+   width:15%;
    padding-left:2%;
    }
 
@@ -190,7 +190,7 @@ logo img{
 }
 .style-select select{
 	border-radius:10px;
-	width:100px;
+	width:75px;
 	/*Gradient*/
 	font-weight:strong;
 	color:black;
