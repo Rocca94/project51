@@ -35,7 +35,7 @@ $(document).ready(function () {
   //Slider
   var mq = window.matchMedia( "(min-width: 601px)" );
   if(mq.matches){
-		document.getElementById("style-select").innerHTML="";
+		document.getElementsByName("style-select").innerHTML="";
   }else{
        document.getElementById("slide").innerHTML="";
   }
