@@ -26,7 +26,7 @@ logo img{
    padding-bottom:10px;
 }
 .list ul {
-	width:45%;
+	width:48%;
 	padding:1px;	
     padding-bottom: 1px;
     margin: 0;
@@ -167,6 +167,7 @@ logo img{
 	float:left;
 	/*Gradient*/
 	height:15pt;
+	background: #ffd27f;
 /*		background: #ffd27f;
     background: -moz-linear-gradient(top,  #ffd27f 0%, #ffb732 44%, #ffae19 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd27f), color-stop(44%,#ffb732), color-stop(100%,#ffae19));
