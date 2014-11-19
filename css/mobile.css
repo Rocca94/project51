@@ -20,10 +20,10 @@ logo img{
 .main{
    min-height:100%;
    overflow:hidden;
-   padding-top:50px;
-   padding-left:20px;
-   padding-right:20px;
-   padding-bottom:100px;
+   padding-top:5px;
+   padding-left:2px;
+   padding-right:2px;
+   padding-bottom:10px;
 }
 .list ul {
 	padding:1px;	
