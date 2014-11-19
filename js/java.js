@@ -1,6 +1,4 @@
-  var vettore = ["Giovanna dame en", "Azzuz e' ", "Napoleone e' ", "Arcibaldo e' ", "Sgarbi e' ", "Un Pollooo e' ", "Monti e' "];
-  
-var vett= ["Pantano", "Mona", "Capra Capra Capra", "Decesso", "Stalin", "Monti", "Nero"];
+
 /*
 $(document).ready(function () {
     
@@ -33,11 +31,12 @@ $(document).ready(function () {
 });*/
  $(document).ready(function() {
   //Slider
-  var mq = window.matchMedia( "(min-width: 601px)" );
+  var mq= window.matchMedia( "(min-width: 601px)" );
   if(mq.matches){
-		document.getElementsByName("style-select").innerHTML="";
+	   $( ".style-select" ).remove();
   }else{
-       document.getElementById("slide").innerHTML="";
+       $( "#slid" ).remove();
+      
   }
     $( "ui-slider-range ui-widget-header ui-corner-all" ).css('background', 'rgb(0,255,0)');
     $( "#slider-range" ).slider({

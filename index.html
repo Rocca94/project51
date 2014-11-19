@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" media="(min-width:601px)"  type="text/css" href="css/style.css" media="screen" >
+	<link rel="stylesheet" media="(min-width:601px)"  type="text/css" href="css/style.css">
 	<link rel="stylesheet" media="(max-width:600px)" href="css/mobile.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 	<script src="js/jquery.js" charset="UTF-8"></script>
@@ -14,12 +14,12 @@
  <body>
 	<div class="container">
 		<logo><img src="img/logo.png"></logo>
-		<div class="text"> <i>Se non sono presenti aule libere <br>nel'intervallo di tempo da voi scelto potete sempre usufruire di biblioteche e aule studio!</i></div>
 		<div class="main">
+		
 		<div class="query black">
 			<ul>
 			    <li id="slid"><div id="slider-range"></div><div type="text" id="amount"></div></li>
-				<li><div class="style-select">
+				<li><div class="style-select2">
 					<select>
 						<option select="selected" value="lun">Lunedì</option>
 						<option value="mar">Martedì</option>
@@ -61,13 +61,20 @@
 		</div>
 		<div id="az" class="result">
 			<ul>
-			<li><div class="row"><div class="hours">9:00-11:00</div><div class="room">A102,A104,A105</div></div></li>
-		    <li> <div class="row"><div class="hours">9:00-10:00</div><div class="room">A102</div></div></li>
+			<div class="row block">
+				<li><div class="row"><div class="hours">9:00-11:00</div><div class="room">A102,A104,A105</div></div></li>
+			</div>
+			<div class="row block">
+				<li><div class="row"><div class="hours">9:00-10:00</div><div class="room">A102,A104,A105</div></div></li>
+				<li><div class="row"><div class="hours">10:00-11:00</div><div class="room">A102</div></div></li>
+			</div>
 			</ul>
 		</div>
 		
 	</div>
+	<footer><div class="text"> <i>Se non sono presenti aule libere <br>nel'intervallo di tempo da voi scelto potete sempre usufruire di biblioteche e aule studio!</i></div></footer>
 	</div>
+	
  </body>
 
 </html>
