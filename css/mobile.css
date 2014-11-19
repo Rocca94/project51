@@ -26,7 +26,7 @@ logo img{
    padding-bottom:10px;
 }
 .list ul {
-	width:48%;
+	width:49%;
 	padding:1px;	
     padding-bottom: 1px;
     margin: 0;
@@ -159,8 +159,6 @@ logo img{
 	list-style:none;
 }
 .hours{
-	min-height:100%;
-	overflow:hidden;
 	width:40%;
 	color:black;
 	font-size:12pt;
@@ -168,7 +166,7 @@ logo img{
 	/*Gradient*/
 	height:15pt;
 	background: #ffd27f;
-/*		background: #ffd27f;
+/*  background: #ffd27f;
     background: -moz-linear-gradient(top,  #ffd27f 0%, #ffb732 44%, #ffae19 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd27f), color-stop(44%,#ffb732), color-stop(100%,#ffae19));
 	background: -webkit-linear-gradient(top,  #ffd27f 0%,#ffb732 44%,#ffae19 100%);
@@ -181,8 +179,6 @@ logo img{
 
 }
 .room{
-	min-height:100%;
-	overflow:hidden;
 	width:60%;
 	color:black;
     display:inline-block;
