@@ -191,6 +191,21 @@ logo img{
 .text2{
 	display:block;
 }
+footer{
+	min-height:100%;
+	width:100%;
+	padding-bottom:25px;
+	overflow:hidden;
+}
+.style-select2 select{
+	border-radius:10px;
+	width:100px;
+	/*Gradient*/
+	font-weight:strong;
+	color:black;
+	background: #7abcff;
+
+}
 .style-select select{
 	border-radius:10px;
 	width:65px;
