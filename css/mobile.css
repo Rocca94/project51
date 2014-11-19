@@ -156,7 +156,9 @@ logo img{
 	list-style:none;
 }
 .hours{
-	width:20%;
+	min-height:100%;
+	overflow:hidden;
+	width:40%;
 	color:black;
 	font-size:12pt;
 	float:left;
@@ -175,7 +177,9 @@ logo img{
 
 }
 .room{
-	width:80%;
+	min-height:100%;
+	overflow:hidden;
+	width:60%;
 	color:black;
     display:inline-block;
 	
