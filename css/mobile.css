@@ -220,7 +220,7 @@ footer{
 }
 .style-select2 select{
 	border-radius:10px;
-	width:100px;
+	width:75px;
 	/*Gradient*/
 	font-weight:strong;
 	color:black;
@@ -229,7 +229,7 @@ footer{
 }
 .style-select select{
 	border-radius:10px;
-	width:65px;
+	width:75px;
 	/*Gradient*/
 	font-weight:strong;
 	color:black;
