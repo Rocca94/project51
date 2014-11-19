@@ -11,7 +11,7 @@
 	
 }
 body {
-		font-family:helvetica, verdana, sans-sarif;
+		font-family:helvetica,verdana,sans-sarif;
         /*Gradient*/
 		background: #cccccc;
 		background: -moz-linear-gradient(top,  #cccccc 0%, #cccccc 41%, #ffffff 100%);
