@@ -45,8 +45,9 @@ logo img{
 	padding:1px;	
     padding-bottom: 1px;
     margin: 0;
-	display:block;
 	list-style:none;
+
+	
 }
 .list{
 	width:20%;
@@ -181,8 +182,8 @@ logo img{
 	float:left;
 	/*Gradient*/
 	height:15pt;
-/*		background: #ffd27f;
-    background: -moz-linear-gradient(top,  #ffd27f 0%, #ffb732 44%, #ffae19 100%);
+	background: #ffd27f;
+   /* background: -moz-linear-gradient(top,  #ffd27f 0%, #ffb732 44%, #ffae19 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd27f), color-stop(44%,#ffb732), color-stop(100%,#ffae19));
 	background: -webkit-linear-gradient(top,  #ffd27f 0%,#ffb732 44%,#ffae19 100%);
 	background: -o-linear-gradient(top,  #ffd27f 0%,#ffb732 44%,#ffae19 100%);
@@ -240,4 +241,8 @@ footer{
 	width:100%;
 	padding-bottom:25px;
 	overflow:hidden;
+}
+.copy{
+	padding:15px;
+	
 }

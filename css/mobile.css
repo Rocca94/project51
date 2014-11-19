@@ -29,8 +29,10 @@ logo img{
 	padding:1px;	
     padding-bottom: 1px;
     margin: 0;
-	display:block;
+	display:inline-block;
 	list-style:none;
+	float:left;
+	
 }
 .list{
 	width:100%;
@@ -235,4 +237,8 @@ footer{
 	color:black;
 	background: #7abcff;
 
+}
+.copy{
+	padding:5px;
+	
 }
