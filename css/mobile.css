@@ -26,6 +26,7 @@ logo img{
    padding-bottom:10px;
 }
 .list ul {
+	width:50%;
 	padding:1px;	
     padding-bottom: 1px;
     margin: 0;
