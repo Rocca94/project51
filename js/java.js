@@ -33,6 +33,12 @@ $(document).ready(function () {
 });*/
  $(document).ready(function() {
   //Slider
+  var mq = window.matchMedia( "(min-width: 601px)" );
+  if(mq.matches){
+		document.getElementById("style-select").innerHTML="";
+  }else{
+       document.getElementById("slide").innerHTML="";
+  }
     $( "ui-slider-range ui-widget-header ui-corner-all" ).css('background', 'rgb(0,255,0)');
     $( "#slider-range" ).slider({
       range: true,
