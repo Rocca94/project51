@@ -30,44 +30,27 @@ $(document).ready(function () {
   
 });*/
  $(document).ready(function() {
-  //Slider
- var mq= window.matchMedia( "(min-width: 601px)" );
-  if(mq.matches){
-	   $( ".style-select" ).remove();
 
-  }else{
-       $( "#slid" ).remove();
-	   $(".list").replaceWith("<div class='list'> <ul> <li>Povo</li><li>Mesiano</li> <li>Sociologia</li> </ul>"+
-	                        "<ul> <li>Giurisprudenza</li> <li>Psicologia</li> <li>CIBIO</li> </ul></div>");
-      
-  }
-    $( "ui-slider-range ui-widget-header ui-corner-all" ).css('background', 'rgb(0,255,0)');
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 9,
-      max: 19,
-      values: [ 9, 19 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).html(  ui.values[ 0 ] + " h - " + ui.values[ 1 ]+" h" );
-      }
-    });
-    $( "#amount" ).html($( "#slider-range" ).slider( "values", 0 )+" h" +
-      " - " + $( "#slider-range" ).slider( "values", 1 )+" h" );
-  //--------	  
 	 $(".list li a").on("click", function(e){  
- e.preventDefault();  
- var hrefval = $(this).attr("href");  
-   
- if(hrefval == "#about") {  
-  var distance = $('.menu').css('width');  
-    
- if(distance == "0px") {   
-   openSidepage();  
-  } else { 
-   closeSidepage();  
- }  
-  }
- }); 
+			 e.preventDefault();  
+			 var hrefval = $(this).attr("href");  
+			   
+			 if(hrefval == "#about") {  
+			  var distance = $('.menu').css('width');  
+			$(".location").html($(this).html());
+			 if(distance == "0px") {   
+			   openSidepage();  
+			  } else { 
+			   closeSidepage();  
+			 }  
+			  }
+	 }); 
+	  $(".home").on("click", function(e){  
+			 e.preventDefault();
+			 openSidepage();  
+		 
+			
+	 }); 
   });
 
 function lol(){
