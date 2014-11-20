@@ -30,7 +30,6 @@ $(document).ready(function () {
   
 });*/
  $(document).ready(function() {
-
 	 $(".list li a").on("click", function(e){  
 			 e.preventDefault();  
 			 var hrefval = $(this).attr("href");  
@@ -65,7 +64,7 @@ function lol(){
  
  function openSidepage() {  
 	$('.menu1').animate({  
-		width: '100%'  
+		width: '204%'  
 		}, 400, 'easeOutBack');   
 }  
   

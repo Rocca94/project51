@@ -18,9 +18,9 @@ logo img{
 }
 .menu1{
 	position:absolute;
-	width:100%;
+	right: 0;
 	height:100%;
-	overflow:hidden;
+	width:204%;
 	display: block; 
     z-index:10;	
 	left:0;
