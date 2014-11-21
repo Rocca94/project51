@@ -54,11 +54,10 @@ logo img{
 }
 .menu2{
     position:absolute;
-
 	width:100%;
 	display: block; 
 	left:0;
-	top:10%;
+	top:11%;
     z-index:0;	
 }
 .main{
@@ -123,7 +122,7 @@ logo img{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );
 }
 .query{
-	top:2%;
+	top:10%;
 	left:0;
 	margin:0;
 	padding:0;
@@ -235,7 +234,7 @@ footer{
 	background: linear-gradient(to bottom,  #45484d 0%,#262626 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#262626',GradientType=0 );*/
 	background-image:url("../img/carbon1.png");
-	min-height:10%;
+	height:10%;
 	width:100%;
 	padding-left:3px;
 	overflow:hidden;
