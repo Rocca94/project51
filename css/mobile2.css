@@ -20,12 +20,17 @@ logo img{
 	position:absolute;
 	right: 0;
 	height:100%;
-	width:204%;
+	width:100%;
 	display: block; 
     z-index:10;	
 	left:0;
+	overflow:hidden;
 	top:10%;
 	background: #191919;
+}
+.list{
+	width:100%;
+	display: block; 
 }
 .location{
 	display:inline-block;
@@ -63,7 +68,7 @@ logo img{
    padding-bottom:10px;
 }
 .list ul {
-	width:49%;
+	width:100%;
 	padding:1px;	
     padding-bottom: 1px;
     margin: 0;
@@ -72,10 +77,7 @@ logo img{
 	float:left;
 	
 }
-.list{
-	width:100%;
-	display:block;
-}
+
 .list ul li {
 	height: 30px;
 	text-align:center;
@@ -152,6 +154,7 @@ logo img{
    }
 
 .result{
+	padding-top:10%;
 	display:block; 
     width:100%;
 }

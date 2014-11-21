@@ -34,16 +34,25 @@ $(document).ready(function () {
 			 e.preventDefault();  
 			 var hrefval = $(this).attr("href");  
 			   
-			 if(hrefval == "#about") {  
-			  var distance = $('.menu').css('width');  
+			 if(hrefval == "#about") {   
+			$(".location").html($(this).html());
+		
+			   closeSidepage();  
+		  
+			  }
+	 }); 
+	/* 	 $(".list li").on("click", function(e){  
+		 	 e.preventDefault();  
+			 var distance = $('.menu1').css('width');  
 			$(".location").html($(this).html());
 			 if(distance == "0px") {   
 			   openSidepage();  
 			  } else { 
 			   closeSidepage();  
 			 }  
-			  }
-	 }); 
+			  
+			
+	 }); */
 	  $(".home").on("click", function(e){  
 			 e.preventDefault();
 			 openSidepage();  
@@ -64,7 +73,7 @@ function lol(){
  
  function openSidepage() {  
 	$('.menu1').animate({  
-		width: '204%'  
+		width: '100%'  
 		}, 400, 'easeOutBack');   
 }  
   
