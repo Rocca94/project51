@@ -27,7 +27,7 @@ logo img{
     z-index:10;	
 	left:0;
 	overflow:hidden;
-	top:10%;
+	top:55px;
 	background: #191919;
 }
 .list{
@@ -234,7 +234,8 @@ footer{
 	background: linear-gradient(to bottom,  #45484d 0%,#262626 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#262626',GradientType=0 );*/
 	background-image:url("../img/carbon1.png");
-	height:10%;
+	min-height:55px;
+	height:55px;
 	width:100%;
 	padding-left:3px;
 	overflow:hidden;
