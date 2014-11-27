@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-	<link rel="stylesheet"  href="css/mobile2.css">
+	<link rel="stylesheet" media="(min-width:601px)"  type="text/css" href="css/style2.css">
+	<link rel="stylesheet" media="(max-width:601px)" href="css/mobile2.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 	<script src="js/jquery.js" charset="UTF-8"></script>
 	<script src="js/jquery-ui.js" charset="UTF-8"></script>
@@ -11,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Jura">
 	</head>
  <body>
+	 
+	 <div class="container">
  <div class="toz"><div class="digo"><h2>Find room! <div class="home"></div><div class="location"></div></h2></div></div>
  <div class="menu1">
 		<div class="list">
@@ -69,16 +72,11 @@
 				</li>
 			</div>
 
-			<div class="row block">
+
 				<li>
-					<div class="row"><div class="hours">9:00-10:00</div><div class="room">B102</div></div>
+					<div class="hours">9:00-10:00<br>10:00-12:00<br>10:00-12:00</div><div class="room">B102<br>A103 - B103<br>A103 - B103</div>
 				</li>
-				<li>
-					<div class="row">
-						<div class="hours">10:00-12:00</div><div class="room">A103 - B103</div>
-					</div>
-				</li>
-			</div>
+
 
 			<div class="row block">
 				<li>
@@ -108,12 +106,13 @@
 			</div>
 			</ul>
 		</div>
-		</div>
-	<footer><div class="text"> <i>Se non sono presenti aule libere <br>nel'intervallo di tempo da voi scelto potete sempre usufruire di biblioteche e aule studio!</i></div>
+			<footer><div class="text"> <i>Se non sono presenti aule libere <br>nel'intervallo di tempo da voi scelto potete sempre usufruire di <a href="http://web.unitn.it/biblioteca/10221/biblioteca-centrale" target="_blank">biblioteche e aule studio!</a></i></div>
 			<div class="copy">©FemtoWatt42</div>
 	</footer>
+		</div>
+
 	
-	
+	</div>
  </body>
 
 </html>
