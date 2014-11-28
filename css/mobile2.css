@@ -51,8 +51,8 @@ logo img{
 	margin-left:10px;
 	width:30px;
 	height:30px;
-	background-image:url("http://png-2.findicons.com/files/icons/1580/devine_icons_part_2/128/home_w.png");
-    background-size: 30px 30px;
+	background-image:url("../img/arrow.png");
+  background-size: 30px 30px;
 	background-repeat:no repeat;
 }
 .menu2{
@@ -125,18 +125,17 @@ logo img{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );
 }
 .query{
-	top:10%;
 	left:0;
 	margin:0;
 	padding:0;
 	width:100%;
 	height:50px;
-    text-align:center;
+  text-align:center;
 }
 .query ul {
 	margin:auto;
 	padding:0;
-    width:100%;
+  width:100%;
 	padding-top:10px;
 	display:block;
 	float:left;
@@ -153,27 +152,32 @@ logo img{
    }
 
 .result{
-	padding-top:10%;
+	background-color: white;
+	padding-top:0.5%; 
+	padding-bottom:0.5%; 
 	display:block; 
-    width:100%;
+  width:100%;
+	
 }
 .result ul {
-	width:100%;
+	width:97%;
 	padding:0;	
-    margin: 0;
+	
+  margin: auto;
 	list-style:none;
 }
 .result ul li {
-	padding-top:0.5%;	
-    margin: 0;
+	margin-top:3px;
+	border: solid 0.5pt;
+	background-color: white;
 	list-style:none;
+	box-shadow: 1px 1px 2px;
 }
 .hours{
 	width:40%;
 	color:black;
 	font-size:12pt;
 	float:left;
-	height:15pt;
 	background: #ffd27f;
 }
 .room{
@@ -186,7 +190,6 @@ logo img{
 	height:100%;
     min-height:100%;
 	overflow:hidden;
-	background-color:#D3D3D3;
 	margin-top: 2px;
 	margin-bottom: 2px;
 }
@@ -194,10 +197,24 @@ logo img{
 	display:block;
 }
 footer{
-	min-height:100%;
+
 	width:100%;
 	padding-bottom:5px;
+	padding-top: 10px;
 	overflow:hidden;
+	position:relative;
+	color:#ffae19;
+	/*background: #45484d;
+	background: -moz-linear-gradient(top,  #45484d 0%, #262626 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#262626));
+	background: -webkit-linear-gradient(top,  #45484d 0%,#262626 100%);
+	background: -o-linear-gradient(top,  #45484d 0%,#262626 100%);
+	background: -ms-linear-gradient(top,  #45484d 0%,#262626 100%);
+	background: linear-gradient(to bottom,  #45484d 0%,#262626 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#262626',GradientType=0 );*/
+	background-image:url("../img/carbon1.png");
+
+  z-index:1;
 }
 
 .style-select select{

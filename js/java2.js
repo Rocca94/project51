@@ -29,6 +29,7 @@ $(document).ready(function () {
     });
   
 });*/
+var rot=0;
  $(document).ready(function() {
 	 $(".list li a").on("click", function(e){  
 			 e.preventDefault();  
@@ -87,6 +88,17 @@ function lol(){
 			}, 400, 'easeOutBack'); 
 			
 		}
+	 if(rot==1){
+		$('.home').animate({  borderSpacing: 180}, {
+    step: function(now,fx) {
+      $(this).css('transform','rotate('+now+'deg)');
+    },
+    duration:'slow'
+			},'easeIn');
+		 //$('.home').css("transform","rotate(0deg)");
+		 rot=0;
+	
+	 }
  }
   
 function closeSidepage(){  
@@ -108,7 +120,16 @@ function closeSidepage(){
 				}, 400, 'easeOutQuint');  
 	 }
 	
-	
+	if(rot==0){
+	$('.home').animate({  borderSpacing: -0}, {
+    step: function(now,fx) {
+      $(this).css('transform','rotate('+now+'deg)');
+    },
+    duration:'slow'
+			},'easeIn');
+		// $('.home').css("transform","rotate(-180deg)");
+			rot=1;
+	 }
 	
 
 

@@ -47,12 +47,14 @@ logo img{
 
 .home{
 	display:inline-block;
-	margin-left:10px;
+	margin-top: 2px;
+	margin-right:10px;
 	width:30px;
-	height:30px;
-	background-image:url("http://png-2.findicons.com/files/icons/1580/devine_icons_part_2/128/home_w.png");
-    background-size: 30px 30px;
+	height:27px;
+	background-image:url("../img/arrow.png");
+  background-size: 30px 30px;
 	background-repeat:no repeat;
+	transform: rotate(0deg);
 }
 .menu2{
   position:fixed;
@@ -128,25 +130,26 @@ a{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );
 }
 .query{
-	top:10%;
 	left:0;
 	margin:0;
 	padding:0;
 	width:100%;
 	height:50px;
-    text-align:center;
+  text-align:center;
 }
 .query ul {
 	margin:auto;
 	padding:0;
-    width:100%;
+  width:100%;
 	padding-top:10px;
 	display:block;
 	float:left;
 	  
 }
 
-
+h2{
+	display: inline-block;
+}
 .query ul li{
    padding-top:0.5%;
    display:inline-block;
