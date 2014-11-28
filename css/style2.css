@@ -11,7 +11,10 @@ body {
 		background-image:url("../img/sfondo1.png");
 		
 }
-
+.mob{
+	display:none;
+	
+}
 logo img{
 	width:100px;
 	height:50px;
@@ -26,7 +29,7 @@ logo img{
   z-index:10;	
 	left:0;
 	overflow:hidden;
-	top:55px;
+	top:65px;
 	background: #191919;
 }
 .list{
@@ -56,7 +59,7 @@ logo img{
 	width:79%;
 	display: block; 
 	right:1%;
-	top:55px;
+	top:65px;
   z-index:0;	
 }
 .main{
@@ -153,23 +156,26 @@ a{
    }
 
 .result{
+	background-color: white;
 	padding-top:0.5%; 
+	padding-bottom:0.5%; 
 	display:block; 
   width:100%;
+	
 }
 .result ul {
-	width:100%;
+	width:97%;
 	padding:0;	
-   margin: 0;
+	
+  margin: auto;
 	list-style:none;
 }
 .result ul li {
 	margin-top:3px;
-
 	border: solid 0.5pt;
-
 	background-color: white;
 	list-style:none;
+	box-shadow: 1px 1px 2px;
 }
 .hours{
 	width:40%;
@@ -189,7 +195,6 @@ a{
 	height:100%;
     min-height:100%;
 	overflow:hidden;
-	background-color:#D3D3D3;
 	margin-top: 2px;
 	margin-bottom: 2px;
 }
@@ -256,6 +261,7 @@ footer{
 	background-image:url("../img/carbon1.png");
 	min-height:55px;
 	height:55px;
+	padding-bottom:10px ;
 	width:100%;
 	padding-left:3px;
 	overflow:hidden;

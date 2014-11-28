@@ -6,6 +6,9 @@
 	
 	
 }
+#mob{
+		width: 100px;
+}
 body {
 		font-family:'Roboto Slab', verdana, sans-sarif;
 		background-image:url("../img/sfondo1.png");

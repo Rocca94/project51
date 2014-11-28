@@ -72,22 +72,44 @@ function lol(){
 
  
  function openSidepage() {  
-	$('.menu1').animate({  
-		width: '20%'  
-		}, 400, 'easeOutBack');   
-	$('.menu2').animate({  
-		right: '1%'    
-		}, 400, 'easeOutBack');  
+	//Desktop version
+	 var col=$(".mob").css('display');
+	 if(col=="none"){
+				$('.menu1').animate({  
+			width: '20%'  
+			}, 400, 'easeOutBack'); 
+			$('.menu2').animate({  
+				right: '1%'    
+			}, 400, 'easeOutBack'); 
+	 		}else{//Mobile version
+					$('.menu1').animate({  
+			width: '100%'  
+			}, 400, 'easeOutBack'); 
+			
+		}
  }
   
 function closeSidepage(){  
- //$("#navigation li a").removeClass("open");  
-	$('.menu1').animate({  
-	width: '0px'  
-	}, 400, 'easeOutQuint');   
-	$('.menu2').animate({  
-	right: '11%'  
-	}, 400, 'easeOutQuint');   
+	//Desktop version 
+	var col=$(".mob").css('display');
+	
+	 if(col=="none"){
+		 
+		$('.menu1').animate({  
+		width: '0px'  
+		}, 400, 'easeOutQuint');   
+		$('.menu2').animate({  
+		right: '11%'  
+		}, 400, 'easeOutQuint');
+	 
+	 }else{//Mobile version
+		 	$('.menu1').animate({  
+				width: '0px'  
+				}, 400, 'easeOutQuint');  
+	 }
+	
+	
+	
 
 
 }  
