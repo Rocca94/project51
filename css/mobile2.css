@@ -14,7 +14,9 @@ body {
 		background-image:url("../img/sfondo1.png");
 		
 }
-
+h2{
+	display: inline-block;
+}
 logo img{
 	width:100px;
 	height:50px;

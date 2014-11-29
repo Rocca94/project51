@@ -56,8 +56,14 @@ var rot=0;
 	 }); */
 	  $(".home").on("click", function(e){  
 			 e.preventDefault();
+			if(rot==1){
 			 openSidepage();  
-		 
+				rot=0;
+			}else{
+				closeSidepage();	
+				rot=1
+			}
+			
 			
 	 }); 
   });
@@ -89,7 +95,7 @@ function lol(){
 			
 		}
 	 if(rot==1){
-		$('.home').animate({  borderSpacing: 180}, {
+		$('.home').animate({  borderSpacing: 0}, {
     step: function(now,fx) {
       $(this).css('transform','rotate('+now+'deg)');
     },
@@ -121,7 +127,7 @@ function closeSidepage(){
 	 }
 	
 	if(rot==0){
-	$('.home').animate({  borderSpacing: -0}, {
+	$('.home').animate({  borderSpacing: 180}, {
     step: function(now,fx) {
       $(this).css('transform','rotate('+now+'deg)');
     },
