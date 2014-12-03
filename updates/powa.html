@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery.js" charset="UTF-8"></script>
+	<script src="js/jquery-ui.js" charset="UTF-8"></script>
+	<script>
+	var vals = [];
+	var nome = [];
+	$(document).ready(function() {
+	
+	$("a").each(function() { 
+	
+	var tmp=$(this).attr("href");
+	if(tmp.length>=44){
+		vals.push(tmp.substring(tmp.length-5,tmp.length));
+		var tmp2=$(this).html();
+		tmp2.replace(" ", "_");
+		nome.push(tmp2);
+		}
+	 });
+	});
+	function show(){
+	var guggo="";
+	for(var i =0;i<vals.length;i++){
+	    xmlhttpContenuti=GetXmlHttpObject();
+	    if (xmlhttpContenuti==null){
+			alert ("Your browser does not support Ajax HTTP");
+			return;
+			}
+		var url="insert.php?idf="+vals[i]+"&nomeF="+nome[i];
+		xmlhttpContenuti.open("GET",url,true);
+		xmlhttpContenuti.send(null);
+		}
+	
+	}
+	function GetXmlHttpObject(){
+		if (window.XMLHttpRequest){
+        return new XMLHttpRequest();
+		}
+		if (window.ActiveXObject){
+			return new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		return null;
+	}
+	</script>
+</head>
+ <body>	<div id="lolz" style="color:red; width:100%;height:100%;"  >
+				</div>
+				<input type="button" value="push"onclick="show();">
+
+               <div id="dip_10027" style="display: none;">
+                <h2>
+                    Centro Interdipartimentale Biologia Integrata- CIBio</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10027/10116">Laurea - Scienze e Tecnologie Biomolecolari</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10027/10232">Laurea Magistrale - BIOTECNOLOGIE CELLULARI E MOLECOLARI</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10030" style="display: none;">
+                <h2>
+                    Centro interdipartimentale Mente/Cervello- CIMeC </h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10030/10168">Laurea Magistrale - Cognitive Science - Scienze Cognitive</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10032" style="display: none;">
+                <h2>
+                    Centro Linguistico d'Ateneo</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10032/10493">Corso Singolo - Centro Linguistico d&#39;Ateneo</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10019" style="display: none;">
+                <h2>
+                    Dipartimento di Economia e Management</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10019/10126">Laurea - Amministrazione Aziendale e Diritto</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10019/10128">Laurea - Gestione Aziendale</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10019/10129">Laurea - Economia e Management</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10019/10136">Laurea Magistrale - International Management - Management Internazionale</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10019/10176">Laurea Magistrale - Innovation Management - Management dell&#39;innovazione</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10019/10178">Laurea Magistrale - Economics - Economia</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10019/10179">Laurea Magistrale - Finanza</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10019/10185">Laurea Magistrale - Management</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10019/10186">Laurea Magistrale - Management</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10019/10187">Laurea Magistrale - Economia e legislazione d&#39;impresa</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10025" style="display: none;">
+                <h2>
+                    Dipartimento di Fisica</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10025/10113">Laurea - Fisica</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10025/10169">Laurea Magistrale - FISICA</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10021" style="display: none;">
+                <h2>
+                    Dipartimento di Ingegneria Civile, Ambientale e Meccanica</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10021/10127">Laurea - Ingegneria Civile</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10021/10130">Laurea - Ingegneria per l&#39;ambiente e il territorio</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10021/10149">Laurea Magistrale - Ingegneria Civile</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10021/10150">Laurea Magistrale - Ingegneria per l&#39;ambiente e il territorio</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10021/10437">Laurea Magistrale - Ingegneria Energetica</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10021/10175">Laurea Magistrale Ciclo Unico 5 anni - Ingegneria Edile-Architettura</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10023" style="display: none;">
+                <h2>
+                    Dipartimento di Ingegneria e Scienza dell'Informazione</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10023/10114">Laurea - Informatica</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10023/10133">Laurea - Ingegneria Elettronica e delle Telecomunicazioni</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10023/10134">Laurea - Ingegneria dell&#39;informazione e Organizzazione D&#39;impresa</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10023/10153">Laurea Magistrale - Ingegneria delle telecomunicazioni</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10023/10117">Laurea Magistrale - INFORMATICA</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10022" style="display: none;">
+                <h2>
+                    Dipartimento di Ingegneria Industriale</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10022/10131">Laurea - Ingegneria Industriale</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10022/10151">Laurea Magistrale - Ingegneria Meccatronica</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10022/10152">Laurea Magistrale - Ingegneria dei materiali</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10024" style="display: none;">
+                <h2>
+                    Dipartimento di Lettere e Filosofia</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10155">Laurea - Filosofia</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10156">Laurea - Beni culturali</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10157">Laurea - Lingue moderne</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10158">Laurea - Studi storici e filologico-letterari</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10438">Laurea - Lingue moderne</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10159">Laurea Magistrale - Conservazione e gestione dei Beni culturali</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10164">Laurea Magistrale - Letterature euroamericane, traduzione e critica letteraria</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10165">Laurea Magistrale - Mediazione linguistica, turismo e culture</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10166">Laurea Magistrale - Filologia e critica letteraria</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10167">Laurea Magistrale - Filosofia e linguaggi della modernit&#224;</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10024/10233">Laurea Magistrale - Scienze storiche</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10026" style="display: none;">
+                <h2>
+                    Dipartimento di Matematica</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10026/10115">Laurea - Matematica</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10026/10170">Laurea Magistrale - MATEMATICA</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10029" style="display: none;">
+                <h2>
+                    Dipartimento di Psicologia e Scienze Cognitive</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10029/10112">Laurea - Interfacce e Tecnologie della Comunicazione</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10029/10123">Laurea - Scienze e Tecniche di Psicologia Cognitiva</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10029/10124">Laurea Magistrale - Psicologia</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10028" style="display: none;">
+                <h2>
+                    Dipartimento di Sociologia e Ricerca Sociale</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10028/10507">Master di Secondo Livello - Previsione Sociale</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10028/10137">Laurea - Sociologia</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10028/10138">Laurea - Studi internazionali</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10028/10139">Laurea - Servizio Sociale</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10028/10140">Laurea Magistrale - Sociologia e Ricerca Sociale</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10028/10234">Laurea Magistrale - Gestione delle organizzazioni e del territorio</a></li>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10028/10235">Laurea Magistrale - Metodologia, Organizzazione e Valutazione dei Servizi Sociali</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10020" style="display: none;">
+                <h2>
+                    Facoltà di Giurisprudenza</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10020/10055">Laurea Magistrale Ciclo Unico 5 anni - Giurisprudenza</a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+               <div id="dip_10031" style="display: none;">
+                <h2>
+                    Scuola di studi Internazionali</h2>
+                <ul>
+                    
+                    <li>
+                        <a href="/Orari/it/Web/CalendarioCds/2014/10031/10177">Laurea Magistrale - EUROPEAN AND INTERNATIONAL STUDIES - STUDI EUROPEI E INTERNAZIONALI </a></li>
+                    
+                </ul>
+                <p class="info">Per gli orari dei corsi di studio non presenti in questo elenco effettuare la ricerca per attività didattica/docente oppure consultare i siti di dipartimento.</p>
+            </div>
+            
+
+
+
+        </div>
+     
+ 
+ </body>
+
+</html>
