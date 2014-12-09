@@ -9,15 +9,20 @@
 		$arr=str_split($str2);
 	
 		$data="";
-		for($i=60;$i<70;$i++){
-			$data.=$arr[$i];
-		}
-		$ora="";
-		for($i=72;$i<94;$i++){
-			$ora.=$arr[$i];
-		}
-	
+		$str3;
+		$s=0;
 
-		echo $data." ".$ora;
+		while($arr[$s]!='('){
+			$str3[$s]=$arr[$s];	
+			$s++;
+
+		}
+		$s=count($str3)-1;
+		$aula="";
+		while($arr[$s]!=':'){
+			$aula.=$str3[$s];	
+			$s--;
+		}
+		echo "<br>".strrev($aula);
 
 ?>

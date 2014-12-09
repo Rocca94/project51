@@ -24,7 +24,7 @@
 	 });
 	});
 	function show(){
-	if(i<1){
+	if(i<10){
 		i++;
 	    xmlhttpContenuti=GetXmlHttpObject();
 	    if (xmlhttpContenuti==null){
@@ -65,7 +65,7 @@
 	function parsaABomba(){
 			if (xmlhttpStep2.readyState==4){
 				var lol= xmlhttpStep2.responseText.trim();
-				document.getElementById("lolz").innerHTML+=lol;
+				document.getElementById("lolz").innerHTML+=lol+" "+arrContent[i];
 				$(".lolz p").each(function() { 
 					var tmp=$(this).html();
 					ora.push(tmp);
