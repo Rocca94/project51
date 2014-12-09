@@ -5,7 +5,7 @@ $db_user = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
 $db_pass = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
 $db_name = 'fw42'; //this is the database I created in PhpMyAdmin
 
-$conn = new mysqli($db_host, $db_user, $db_pass);
+$conn = new mysqli($db_host, $db_user, $db_pass,$db_name);
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
