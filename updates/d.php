@@ -1,14 +1,6 @@
 <?php
 
-$conn =  new mysqli(
-$_ENV['OPENSHIFT_MYSQL_DB_HOST'],
-$_ENV['OPENSHIFT_MYSQL_DB_USERNAME'],
-$_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'],
-$_ENV['OPENSHIFT_APP_NAME'], // By default, app name == db name
-$_ENV['OPENSHIFT_MYSQL_DB_PORT'],
-$_ENV['OPENSHIFT_MYSQL_DB_SOCKET']
-);
-echo $_ENV['OPENSHIFT_MYSQL_DB_HOST'];
+$conn = new mysqli_connect(getenv('OPENSHIFT_MYSQL_DB_HOST'), getenv('OPENSHIFT_MYSQL_DB_USERNAME'), getenv('OPENSHIFT_MYSQL_DB_PASSWORD'), "", getenv('OPENSHIFT_MYSQL_DB_PORT')) or die("Error: " . mysqli_error($mysqlCon));
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
