@@ -1,6 +1,4 @@
-  var vettore = ["Giovanna dame en", "Azzuz e' ", "Napoleone e' ", "Arcibaldo e' ", "Sgarbi e' ", "Un Pollooo e' ", "Monti e' "];
-  
-var vett= ["Pantano", "Mona", "Capra Capra Capra", "Decesso", "Stalin", "Monti", "Nero"];
+
 /*
 $(document).ready(function () {
     
@@ -31,7 +29,18 @@ $(document).ready(function () {
     });
   
 });*/
-  $(function() {
+ $(document).ready(function() {
+  //Slider
+ var mq= window.matchMedia( "(min-width: 601px)" );
+  if(mq.matches){
+	   $( ".style-select" ).remove();
+
+  }else{
+       $( "#slid" ).remove();
+	   $(".list").replaceWith("<div class='list'> <ul> <li>Povo</li><li>Mesiano</li> <li>Sociologia</li> </ul>"+
+	                        "<ul> <li>Giurisprudenza</li> <li>Psicologia</li> <li>CIBIO</li> </ul></div>");
+      
+  }
     $( "ui-slider-range ui-widget-header ui-corner-all" ).css('background', 'rgb(0,255,0)');
     $( "#slider-range" ).slider({
       range: true,
@@ -39,16 +48,65 @@ $(document).ready(function () {
       max: 19,
       values: [ 9, 19 ],
       slide: function( event, ui ) {
-        $( "#amount" ).html( "h" + ui.values[ 0 ] + " - h" + ui.values[ 1 ] );
+        $( "#amount" ).html(  ui.values[ 0 ] + " h - " + ui.values[ 1 ]+" h" );
       }
     });
-    $( "#amount" ).html( "h" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - h" + $( "#slider-range" ).slider( "values", 1 ) );
+    $( "#amount" ).html($( "#slider-range" ).slider( "values", 0 )+" h" +
+      " - " + $( "#slider-range" ).slider( "values", 1 )+" h" );
+  //--------	  
+	 $(".list li a").on("click", function(e){  
+ e.preventDefault();  
+ var hrefval = $(this).attr("href");  
+   
+ if(hrefval == "#about") {  
+  var distance = $('.menu').css('width');  
+    
+ if(distance == "0px") {   
+   openSidepage();  
+  } else { 
+   closeSidepage();  
+ }  
+  }
+ }); 
   });
+
 function lol(){
    /* var col = vettore[Math.floor((Math.random() * vettore.length))];
 	var zoz = vett[Math.floor((Math.random() * vett.length))];
 	document.getElementById("az").innerHTML+="<div class='row'><div class='room'>"+col+"</div><div class='hours'>"+zoz+"</div></div>";*/
 }
+
+
+
+
+ 
+ function openSidepage() {  
+	$('.menu1').animate({  
+		width: '100%'  
+		}, 400, 'easeOutBack');   
+}  
+  
+function closeSidepage(){  
+ //$("#navigation li a").removeClass("open");  
+	$('.menu1').animate({  
+	width: '0px'  
+	}, 400, 'easeOutQuint');   
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
