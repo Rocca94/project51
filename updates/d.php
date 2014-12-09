@@ -8,7 +8,7 @@ $_ENV['OPENSHIFT_APP_NAME'], // By default, app name == db name
 $_ENV['OPENSHIFT_MYSQL_DB_PORT'],
 $_ENV['OPENSHIFT_MYSQL_DB_SOCKET']
 );
-
+echo $_ENV['OPENSHIFT_MYSQL_DB_HOST'];
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
