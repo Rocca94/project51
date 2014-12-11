@@ -14,11 +14,18 @@ if (!$conn) {
 	//$sql = "SELECT aula FROM orario WHERE orario.polo='".$polo."' GRUP BY aula SELECT aula FROM orario WHERE orario.polo='".$polo."' AND (orario.orainizio<orario.orafine OR orario.orafine>orario.orainizio) GRUP BY aula ";
 	
 	$sql = "SELECT aula FROM orario WHERE orario.polo='".$polo."' GRUP BY aula";
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+		// output data of each row
+		while($row = $result->fetch_assoc()) {
+			echo "id: " . $row["aula"]. "<br>";
+		}
+	} else {
+		echo "0 results";
+	}
+	$conn->close()
 	
-					$result = mysqli_query($sql);
-					while($row = mysqli_fetch_array($result)) {
-						echo $row['aula'];
-				    }
-		print_r($result);
+				
 			
         ?>
