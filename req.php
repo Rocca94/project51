@@ -10,11 +10,11 @@ echo "hola";
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
-}/*
-	$polo=$_GET["polo"];
+}
+	/*$polo=$_GET["polo"];
 	$giorno=$_GET["day"];
 	$orain=$_GET["orai"];
-	$orafin=$_GET["oraf"];
+	$orafin=$_GET["oraf"];*/
 	
 	$sql = "SELECT * FROM freeaula WHERE polo='".$polo."' AND giorno='".$giorno."' AND (orainizio<=".$orai." AND orafine>=".$oraf.")";
 	echo $sql;
@@ -28,6 +28,6 @@ if (!$conn) {
 	} else {
 		echo "0 results";
 	}
-	*/
+	
 	$conn->close();		
 ?>
