@@ -16,6 +16,7 @@ if (!$conn) {
 	$orafin=$_GET["oraf"];
 	
 	$sql = "SELECT * FROM freeaula WHERE polo='".$polo."' AND giorno='".$giorno."' AND (orainizio<=".$orai." AND orafine>=".$oraf.")";
+	echo $sql;
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 		// output data of each row
