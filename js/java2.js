@@ -30,16 +30,31 @@ $(document).ready(function () {
   
 });*/
 var rot=0;
+var d = new Date();
+var weekday = new Array(7);
+weekday[0]=  "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var polo="";
+var giorno="Mon";;
+var orai=1417424400;
+var oraf=1417460400;
  $(document).ready(function() {
 	 $(".list li a").on("click", function(e){  
 			 e.preventDefault();  
 			 var hrefval = $(this).attr("href");  
 			   
 			 if(hrefval == "#about") {   
-			$(".location").html($(this).html());
-		
-			   closeSidepage();  
-		  
+			 $(".location").html($(this).html());
+			
+			   closeSidepage();
+			   polo=$(this).html();		   
+			   abomba();
 			  }
 	 }); 
 	/* 	 $(".list li").on("click", function(e){  
@@ -74,7 +89,41 @@ function lol(){
 	document.getElementById("az").innerHTML+="<div class='row'><div class='room'>"+col+"</div><div class='hours'>"+zoz+"</div></div>";*/
 }
 
-
+function abomba(){
+	   xmlhttpContenuti=GetXmlHttpObject();
+	    if (xmlhttpContenuti==null){
+			alert ("Your browser does not support Ajax HTTP");
+			return;
+			}
+		var url="req.php?polo="+polo+"&giorno="+giorno+"&orai="+orai+"&oraf="+oraf;
+		xmlhttpContenuti.onreadystatechange=boomerang;
+		xmlhttpContenuti.open("GET",url,true);
+		xmlhttpContenuti.send(null);
+}
+function boomerang(){
+		if (xmlhttpContenuti.readyState==4){
+			var stringa= xmlhttpContenuti.responseText.trim();
+			var Re = new RegExp("%0D%0A","g");
+			stringa = stringa.replace(Re,"");
+		    var arr=stringa.split("<removekebab>");
+		    for(var i=0; i<arr.length;i++){
+				var temp=arr[i].split("/"); 
+				$(".result ul").append("<li><div class='hours'>"+temp[1]+"-"+temp[2]+"</div><div class='room'>"+temp[0]+"</div></li>")
+			}
+		    
+			//document.write(stringa);
+			
+		}
+}
+function GetXmlHttpObject(){
+		if (window.XMLHttpRequest){
+        return new XMLHttpRequest();
+		}
+		if (window.ActiveXObject){
+			return new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		return null;
+	}
 
 
  
