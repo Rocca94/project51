@@ -9,7 +9,6 @@
 }
 body {
 		font-family:'Roboto Slab', verdana, sans-sarif;
-		//background-image:url("../img/sfondo1.png");
 		background-color: #c0deed;
 }
 .mob{
@@ -27,10 +26,11 @@ logo img{
 	right: 0;
 	width:20%;
 	display: block; 
-  z-index:10;	
+    z-index:10;	
 	left:0;
 	overflow:hidden;
 	top:65px;
+	box-shadow: 3px 2px 2px #000;
 	
 }
 .list{
@@ -64,6 +64,7 @@ logo img{
 	right:1%;
 	top:65px;
   z-index:0;	
+		
 }
 .main{
    min-height:100%;
@@ -93,16 +94,7 @@ a{
 	color:#fff;
 	background: #333333;
 	border-top: solid 2px #4c4c4c;
-	/*Gradient*/
 	line-height: 35px;
-	/*background: #b4e391;
-	background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(50%,#61c419), color-stop(100%,#b4e391));
-	background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	background: -o-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );*/
 	transition: background-color 1s, color 1s;
 }
 
@@ -126,7 +118,8 @@ a{
 	padding:0;
 	width:100%;
 	height:50px;
-  text-align:center;
+    text-align:center;
+	box-shadow: 2px 3px 5px #000;
 }
 .query ul {
 	margin:auto;
@@ -151,60 +144,60 @@ h2{
    }
 
 .result{
-	//background-color: white;
-	padding-top:0.5%; 
-	padding-bottom:0.5%; 
+  padding: 0.5%;
 	display:block; 
   width:100%;
 	
 }
 .result ul {
-	width:96%;
+	width:97%;
 	padding:0;		
-  margin: auto;
+	margin: auto;
 	list-style:none;
 }
 .result ul li {
 	margin-top:4px;
+	width:97%;
 	background-color:#fff; 
 	color:black;
 	border-radius: 4px;
 	list-style:none;
-	box-shadow: 2px 2px 2px #000;
+	box-shadow: 2px 2px 5px #000;
 
 }
 
 .hours{
+	border-radius: 4px 0px 0px 4px;
 	width:19%;
 	font-size:12pt;
 	float:left;
-	background-color: #a8a8a8;
+	background-color: #ffc966;
 	border-right:solid 1px #1B252D; 
 }
 .room{
-	width:80%
-  display:inline-block;
+	width:80%;
+    display:inline-block;
 }
 .block{
 	width:100%;
 	height:100%;
   min-height:100%;
 	overflow:hidden;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	padding: 2px
 }
 .text2{
 	display:block;
 }
 footer{
 	position:absolute;
-  bottom:0;
+	bottom:0;
 	left:0;
 	width:100%;
 	padding-bottom:5px;
 	padding-top: 10px;
 	color:#fff;
 	background-color: #333333;
+	border-top: solid 2px #664200;  
 
 }
 
@@ -219,8 +212,6 @@ footer{
 	padding: 5px;
 	background-color:#323232;
 	box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
-	/*background: #7abcff;*/
-
 }
 .copy{
 	padding:5px;
@@ -236,21 +227,12 @@ footer{
 .digo{
 	position:fixed;
 	color:#fff;
-	/*background: #45484d;
-	background: -moz-linear-gradient(top,  #45484d 0%, #262626 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#262626));
-	background: -webkit-linear-gradient(top,  #45484d 0%,#262626 100%);
-	background: -o-linear-gradient(top,  #45484d 0%,#262626 100%);
-	background: -ms-linear-gradient(top,  #45484d 0%,#262626 100%);
-	background: linear-gradient(to bottom,  #45484d 0%,#262626 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#262626',GradientType=0 );*/
-	//background-image:url("../img/carbon1.png");
 	background-color: #333333;
 	min-height:55px;
 	height:55px;
+	border-bottom: solid 2px #664200;  
 	padding-bottom:10px ;
 	width:100%;
-
 	padding-left:3px;
 	overflow:hidden;
   z-index:1;

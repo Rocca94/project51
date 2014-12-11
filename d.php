@@ -78,5 +78,60 @@ foreach($arrary as $corso){
 		
 	}
 }
-mysqli_close($conn);
+
+	$up[0]="Polo Scientifico e Tecnologico Fabio Ferrari";
+	$up[1]="Facoltà  di Scienze Ed. Potenziamento su campo sportivo, via Sommarive 14  POVO";
+	$up[2]="Palazzo Fedrigotti, c.so Bettini 31 ROVERETO";
+	$up[3]="Palazzo Istruzione, c.so Bettini 84, ROVERETO";
+	$up[4]="Facoltà  di Economia, via Inama 5";
+	$up[5]="Facoltà  di Lettere e Filosofia, via T. Gar";
+	$up[6]="Facoltà  di Ingegneria, Mesiano";
+	$up[7]="Biblioteca di Ingegneria, Mesiano";
+	$up[8]="Facoltà  di Sociologia, via Verdi 26";
+	$gup[0]="Povo";
+	$gup[1]="Povo";
+	$gup[2]="Rovereto";
+	$gup[3]="Rovereto";
+	$gup[4]="Economia";
+	$gup[5]="Lettere";
+	$gup[6]="Mesiano";
+	$gup[7]="Mesiano";
+	$gup[8]="Sociologia";
+	
+	for($i=0;$i<count($up);$i++){
+		$sql="UPDATE orario SET polo='".$gup[$i]."' WHERE polo='".$up[$i]."'";
+		$conn->query($sql);
+	}
+	
+	$sql="TRUNCATE TABLE freeaula";
+	$conn->query($sql);
+	$sql = "SELECT DISTINCT aula,polo FROM orario";
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+		// output data of each row
+		while($row = $result->fetch_assoc()) {
+		$sql = "SELECT DISTINCT orainizio,orafine FROM orario WHERE orario.aula='".$row["aula"]."' AND orario.polo='".$row["polo"]."' ORDER BY orario.orainizio";
+			$aulas = $conn->query($sql);
+			if ($aulas->num_rows > 0) {
+				$i=0;
+				while($col = $aulas->fetch_assoc()) {
+					$orain[$i]=$col["orainizio"];
+					$orafin[$i]=$col["orafine"];
+					$i++;
+				}
+				for($i=0;$i<count($orain);$i++){
+					if(($i+1!=count($orain)) AND ($orain[$i+1]!=$orafin[$i])){
+						$sql = "INSERT INTO freeaula (aula, polo, orainizio, orafine)
+						VALUES ('".$row["aula"]."','".$row["polo"]."',".$orafin[$i].",".$orain[$i+1].")";
+						$conn->query($sql);
+					}
+				}
+			}
+			//echo "Aula:".$row["aula"]."<br>";
+		}
+	} else {
+		echo "0 results";
+	}
+	$conn->close();
 ?>

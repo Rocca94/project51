@@ -11,7 +11,7 @@
 }
 body {
 		font-family:'Roboto Slab', verdana, sans-sarif;
-		background-image:url("../img/sfondo1.png");
+	    background-color: #c0deed;
 		
 }
 h2{
@@ -87,19 +87,10 @@ logo img{
 .list ul li {
 	height: 30px;
 	text-align:center;
-	color:#ffae19;
-	margin-top:1px;
-	background: #323232;
-	/*Gradient*/
+	color:#fff;
+	background: #333333;
+	border-top: solid 2px #4c4c4c;
 	line-height: 25px;
-	/*background: #b4e391;
-	background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(50%,#61c419), color-stop(100%,#b4e391));
-	background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	background: -o-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );*/
 	transition: background-color 1s, color 1s;
 }
 
@@ -110,29 +101,21 @@ logo img{
 }
 .list ul li:hover{
 	color:black;
-	background:#ffae19;
+	background:#0099B7;
 
 }
 .black{
 	background: #323232;
 }
-.green{
-	background: #b4e391;
-	background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(50%,#61c419), color-stop(100%,#b4e391));
-	background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	background: -o-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );
-}
+
 .query{
 	left:0;
 	margin:0;
 	padding:0;
 	width:100%;
 	height:50px;
-  text-align:center;
+	text-align:center;
+  	box-shadow: 2px 3px 5px #000;
 }
 .query ul {
 	margin:auto;
@@ -164,59 +147,56 @@ logo img{
 .result ul {
 	width:97%;
 	padding:0;	
-	
-  margin: auto;
+	margin: auto;
 	list-style:none;
 }
 .result ul li {
 	margin-top:3px;
-	border: solid 0.5pt;
-	background-color: white;
+	width:97%;
+	background-color:#fff; 
+	color:black;
+	border-radius: 4px;
 	list-style:none;
-	box-shadow: 1px 1px 2px;
+	line-height: 27px;
+	box-shadow: 2px 2px 5px #000;
 }
 .hours{
-	width:40%;
-	color:black;
-	font-size:12pt;
+	width:36%;
+	border-radius: 4px 0px 0px 4px;
+	font-size:10pt;
 	float:left;
-	background: #ffd27f;
+	height:100%;
+	background-color: #7fffe8;
+	border-right:solid 1px #1B252D; 
 }
 .room{
 	width:60%;
 	color:black;
-    display:inline-block;
+	font-size:10pt;
+  display:inline-block;
 }
 .block{
 	width:100%;
 	height:100%;
     min-height:100%;
 	overflow:hidden;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	padding: 2px
 }
 .text2{
 	display:block;
 }
 footer{
-
+	position:absolute;
+	bottom:0;
+	left:0;
 	width:100%;
 	padding-bottom:5px;
 	padding-top: 10px;
-	overflow:hidden;
-	position:relative;
-	color:#ffae19;
-	/*background: #45484d;
-	background: -moz-linear-gradient(top,  #45484d 0%, #262626 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#262626));
-	background: -webkit-linear-gradient(top,  #45484d 0%,#262626 100%);
-	background: -o-linear-gradient(top,  #45484d 0%,#262626 100%);
-	background: -ms-linear-gradient(top,  #45484d 0%,#262626 100%);
-	background: linear-gradient(to bottom,  #45484d 0%,#262626 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#262626',GradientType=0 );*/
-	background-image:url("../img/carbon1.png");
-
-  z-index:1;
+	color:#fff;
+	font-size:8pt;
+	background-color: #333333;
+	border-top: solid 2px #664200;  
+	z-index:1;
 }
 
 .style-select select{
@@ -226,12 +206,10 @@ footer{
 	width: 100px; 
 	text-indent: 0.01px; 
 	text-overflow:""; 
-	color: #ffd27f;
+	color: #0099B7;
 	padding: 5px;
 	background-color:#323232;
 	box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
-	/*background: #7abcff;*/
-
 }
 .copy{
 	padding:5px;
@@ -246,20 +224,14 @@ footer{
 
 .digo{
 	position:fixed;
-	color:#ffae19;
-	/*background: #45484d;
-	background: -moz-linear-gradient(top,  #45484d 0%, #262626 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#262626));
-	background: -webkit-linear-gradient(top,  #45484d 0%,#262626 100%);
-	background: -o-linear-gradient(top,  #45484d 0%,#262626 100%);
-	background: -ms-linear-gradient(top,  #45484d 0%,#262626 100%);
-	background: linear-gradient(to bottom,  #45484d 0%,#262626 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#262626',GradientType=0 );*/
-	background-image:url("../img/carbon1.png");
+	color:#fff;
+	background-color: #333333;
 	min-height:55px;
 	height:55px;
+	border-bottom: solid 2px #664200;  
+	padding-bottom:10px ;
 	width:100%;
 	padding-left:3px;
 	overflow:hidden;
-    z-index:1;
+  z-index:1;
 }
