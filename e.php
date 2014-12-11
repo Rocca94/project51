@@ -13,7 +13,7 @@ if (!$conn) {
 	
 	//$sql = "SELECT aula FROM orario WHERE orario.polo='".$polo."' GRUP BY aula SELECT aula FROM orario WHERE orario.polo='".$polo."' AND (orario.orainizio<orario.orafine OR orario.orafine>orario.orainizio) GRUP BY aula ";
 	
-	$sql = "SELECT aula FROM orario WHERE orario.polo='".$polo."' GRUP BY aula";
+	$sql = "SELECT aula FROM orario";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
