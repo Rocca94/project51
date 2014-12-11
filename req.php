@@ -1,10 +1,10 @@
 <?php
-
+echo "hola";
 $db_host = getenv('OPENSHIFT_MYSQL_DB_HOST'); //sample host 
 $db_user = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
 $db_pass = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
 $db_name = 'fw42'; //this is the database I created in PhpMyAdmin
-
+echo "hola";
 $conn = new mysqli($db_host, $db_user, $db_pass,$db_name);
 
 if (!$conn) {
