@@ -8,7 +8,7 @@ $conn = new mysqli($db_host, $db_user, $db_pass,$db_name);
 echo "ciao";
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
-
+	}
 	$polo="Polo Scientifico e Tecnologico Fabio Ferrari";
 	
 	$sql = "SELECT aula FROM orario WHERE orario.polo='".$polo."' GRUP BY aula SELECT aula FROM orario WHERE orario.polo='".$polo."' AND (orario.orainizio<orario.orafine OR orario.orafine>orario.orainizio) GRUP BY aula ";
