@@ -4,12 +4,13 @@ $db_host = getenv('OPENSHIFT_MYSQL_DB_HOST'); //sample host
 $db_user = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
 $db_pass = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
 $db_name = 'fw42'; //this is the database I created in PhpMyAdmin
-echo "hola";
+
 $conn = new mysqli($db_host, $db_user, $db_pass,$db_name);
+echo "hola";
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
-}
+}/*
 	$polo=$_GET["polo"];
 	$giorno=$_GET["day"];
 	$orain=$_GET["orai"];
@@ -27,6 +28,6 @@ if (!$conn) {
 	} else {
 		echo "0 results";
 	}
-	
+	*/
 	$conn->close();		
 ?>

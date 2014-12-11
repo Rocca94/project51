@@ -133,5 +133,6 @@ foreach($arrary as $corso){
 	} else {
 		echo "0 results";
 	}
+	UPDATE `orario` SET `polo`='Povo' WHERE polo='FacoltÃ  di Scienze Ed. Potenziamento su campo sportivo, via Sommarive 14  POVO'
 	$conn->close();
 ?>
