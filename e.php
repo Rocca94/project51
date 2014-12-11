@@ -11,8 +11,9 @@ if (!$conn) {
 	}
 	$polo="Polo Scientifico e Tecnologico Fabio Ferrari";
 	
-	$sql = "SELECT aula FROM orario WHERE orario.polo='".$polo."' GRUP BY aula SELECT aula FROM orario WHERE orario.polo='".$polo."' AND (orario.orainizio<orario.orafine OR orario.orafine>orario.orainizio) GRUP BY aula ";
+	//$sql = "SELECT aula FROM orario WHERE orario.polo='".$polo."' GRUP BY aula SELECT aula FROM orario WHERE orario.polo='".$polo."' AND (orario.orainizio<orario.orafine OR orario.orafine>orario.orainizio) GRUP BY aula ";
 	
+	$sql = "SELECT aula FROM orario WHERE orario.polo='".$polo."' GRUP BY aula";
 	
 					$result = mysqli_query($sql);
 					while($row = mysqli_fetch_array($result)) {
