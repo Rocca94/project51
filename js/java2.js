@@ -108,9 +108,8 @@ function boomerang(){
 			$(".result ul").html("");
 		    for(var i=0; i<arr.length;i++){
 				var temp=arr[i].split("/"); 
-				if(tmp[0]!=""){
 				$(".result ul").append("<li><div class='hours'>"+temp[1]+"-"+temp[2]+"</div><div class='room'>"+temp[0]+"</div></li>");
-				}
+	
 			}
 		    
 			//document.write(stringa);
