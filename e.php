@@ -9,7 +9,7 @@ $conn = new mysqli($db_host, $db_user, $db_pass,$db_name);
 
 $iniz=1417388400;
 $fin=$iniz+604800;
-if((time()<$iniz)OR(time()>$fin)){
+while((time()<$iniz)OR(time()>$fin)){
 	$iniz+=604800;
 	$fin+=604800;
 }
