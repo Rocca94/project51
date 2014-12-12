@@ -41,8 +41,8 @@ weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
 var polo="";
-var orai=1417424400;
-var oraf=1417460400;
+var orai=1417694400;
+var oraf=1417775400;
  $(document).ready(function() {
 	 $(".list li a").on("click", function(e){  
 			 e.preventDefault();  
@@ -105,6 +105,7 @@ function boomerang(){
 			var Re = new RegExp("%0D%0A","g");
 			stringa = stringa.replace(Re,"");
 		    var arr=stringa.split("<removekebab>");
+			$(".result ul").html("");
 		    for(var i=0; i<arr.length;i++){
 				var temp=arr[i].split("/"); 
 				$(".result ul").append("<li><div class='hours'>"+temp[1]+"-"+temp[2]+"</div><div class='room'>"+temp[0]+"</div></li>")
