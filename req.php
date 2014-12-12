@@ -11,20 +11,21 @@ echo "hola";
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-	/*$polo=$_GET["polo"];
-	$giorno=$_GET["day"];
-	$orain=$_GET["orai"];
-	$orafin=$_GET["oraf"];*/
+echo "hola";
+
 	
-	$sql = "SELECT * FROM freeaula WHERE polo='".$polo."' AND giorno='".$giorno."' AND (orainizio<=".$orai." AND orafine>=".$oraf.")";
-	echo $sql;
+	$polo=$_GET["polo"];
+	$orai=$_GET["orai"];
+	$oraf=$_GET["oraf"];
+	
+	$sql = "SELECT * FROM freeaula WHERE freeaula.polo='".$polo."' AND (freeaula.orainizio<=".$orai." AND freeaula.orafine>=".$oraf.")";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
 			echo $row["aula"]."/".$row["orainizio"]."/".$row["orafine"]."<removekebab>";
 			}
-     	}
+     
 	} else {
 		echo "0 results";
 	}
