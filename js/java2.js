@@ -94,7 +94,7 @@ function abomba(){
 			alert ("Your browser does not support Ajax HTTP");
 			return;
 			}
-		var url="ora/req.php?polo="+polo+"&orai="+orai+"&oraf="+oraf;
+		var url="req.php?polo="+polo+"&orai="+orai+"&oraf="+oraf;
 		xmlhttpContenuti.onreadystatechange=boomerang;
 		xmlhttpContenuti.open("GET",url,true);
 		xmlhttpContenuti.send(null);
