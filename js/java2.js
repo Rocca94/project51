@@ -106,7 +106,7 @@ function boomerang(){
 			stringa = stringa.replace(Re,"");
 		    var arr=stringa.split("<removekebab>");
 			$(".result ul").html("");
-		    for(var i=0; i<arr.length;i++){
+		    for(var i=0; i<arr.length-1;i++){
 				var temp=arr[i].split("/"); 
 				$(".result ul").append("<li><div class='hours'>"+temp[1]+"-"+temp[2]+"</div><div class='room'>"+temp[0]+"</div></li>");
 	
